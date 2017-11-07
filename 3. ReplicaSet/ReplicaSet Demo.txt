@@ -1,0 +1,12 @@
+kubectl apply -f replicaset1.yaml
+
+kubectl get pods
+
+kubectl describe rs kuard
+
+kubectl get pods <pod-name> -o yaml
+
+kubectl get pods -l app=kuard,version=2
+
+kubectl scale rs/kuard --replicas=4
+

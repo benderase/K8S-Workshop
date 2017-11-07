@@ -1,0 +1,9 @@
+kubectl describe daemonset fluentd
+
+kubectl get pods -o wide
+
+kubectl label nodes <node-name> ssd=true
+
+kubectl get nodes
+
+kubectl get nodes --selector ssd=true
